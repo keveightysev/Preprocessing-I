@@ -159,11 +159,13 @@ td {
   font-size: 1.6rem;
 }
 .header {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
+  justify-content: center;
+  align-content: flex-start;
 }
 .header nav {
   align-self: flex-end;
@@ -178,9 +180,11 @@ td {
 .header nav a:hover {
   color: #25896D;
 }
-.header img {
-  width: 250px;
-  height: 250px;
+.header .img {
+  background-image: url('http://github.com/keveightysev.png');
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
 }
 .header p {
   border-top: 1px solid gray;
@@ -194,4 +198,68 @@ td {
   background: gray;
   border: none;
   border-radius: 5px;
+}
+.main {
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main .main-top {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.main .main-top .listen-up {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .main .main-top .listen-up {
+    width: 95%;
+  }
+}
+.main .main-top .good-stuff {
+  width: 48%;
+}
+.main .main-top .good-stuff li {
+  padding: 15px 0 15px 20px;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+.main .main-top .good-stuff li:first-child {
+  border-top: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .main .main-top .good-stuff {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .main .main-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.main .work-history {
+  margin-top: 20px;
+}
+.main .work-history table {
+  width: 100%;
+}
+.main .work-history table th {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  text-align: left;
+}
+.main .work-history table td {
+  padding: 10px 0;
+}
+.main .work-history table td:first-child {
+  font-weight: bold;
 }

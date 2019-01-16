@@ -58,8 +58,21 @@ html, body {
 	font-size: 62.5%;
 }
 
+// Variables
 @kevin-teal: #25896D;
 @kevin-font: 'East Sea Dokdo', cursive;
+
+// Mix-Ins
+.custom-flex(@direction;@justify;@align) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-content: @align;
+}
+
+.margin-center() {
+	margin: 0 auto;
+}
 
 body {
 	font-family: 'Helvetica', sans-serif;
@@ -87,11 +100,10 @@ p, li, th, td {
 }
 
 .header {
-	display: flex;
-	flex-direction: column;
 	width: 90%;
-	max-width: 1000px;
-	margin: auto;
+	max-width: 800px;
+	.margin-center();
+	.custom-flex(column;center;flex-start;);
 	nav {
 		align-self: flex-end;
 		margin: 20px 0;
@@ -105,9 +117,11 @@ p, li, th, td {
 			}
 		}
 	}
-	img {
-		width: 250px;
-		height: 250px;
+	.img {
+		background-image: url('http://github.com/keveightysev.png');
+		background-size: cover;
+		width: 25rem;
+		height: 25rem;
 	}
 	p {
 		border-top: 1px solid gray;
@@ -121,5 +135,58 @@ p, li, th, td {
 		background: gray;
 		border: none;
 		border-radius: 5px;
+	}
+}
+
+.main {
+	width: 95%;
+	max-width: 900px;
+	.margin-center();
+	.main-top {
+		margin-top: 30px;
+		.custom-flex(row;space-between;center;);
+		.listen-up {
+			width: 48%;
+			@media (max-width:500px) {
+				width: 95%;
+			}
+		}
+		.good-stuff {
+			width: 48%;
+			li {
+				padding:15px 0 15px 20px;
+				border-bottom: 1px solid lightgrey;
+				border-left: 1px solid lightgrey;
+				border-right: 1px solid lightgrey;
+				&:first-child {
+					border-top: 1px solid lightgrey;
+				}
+			}
+			@media (max-width:500px) {
+				width: 95%;
+				margin-top: 20px
+			}
+		}
+		@media (max-width: 500px) {
+			.custom-flex(column;center;center;)
+		}
+	}
+	.work-history {
+		margin-top: 20px;
+		table {
+			width: 100%;
+			th {
+				font-weight: bold;
+				border-bottom: 1px solid gray;
+				padding: 10px 0;
+				text-align: left;
+			}
+			td {
+				&:first-child {
+					font-weight:bold;
+				}
+				padding: 10px 0;
+			}
+		}
 	}
 }
