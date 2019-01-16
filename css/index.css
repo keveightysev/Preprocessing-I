@@ -133,4 +133,65 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+  font-family: 'East Sea Dokdo', cursive;
+  color: #25896D;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+p,
+li,
+th,
+td {
+  font-size: 1.6rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+.header nav {
+  align-self: flex-end;
+  margin: 20px 0;
+}
+.header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  padding-left: 3rem;
+  color: black;
+}
+.header nav a:hover {
+  color: #25896D;
+}
+.header img {
+  width: 250px;
+  height: 250px;
+}
+.header p {
+  border-top: 1px solid gray;
+  padding: 25px 0;
+}
+.header button {
+  width: 150px;
+  height: 40px;
+  font-size: 2rem;
+  color: white;
+  background: gray;
+  border: none;
+  border-radius: 5px;
 }
