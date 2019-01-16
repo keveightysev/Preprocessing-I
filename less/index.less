@@ -132,15 +132,19 @@ p, li, th, td {
 		height: 40px;
 		font-size: 2rem;
 		color: white;
-		background: gray;
+		background: @kevin-teal;
 		border: none;
 		border-radius: 5px;
+		&:focus {
+			outline-width: 0;
+		}
 	}
 }
 
 .main {
 	width: 95%;
 	max-width: 900px;
+	padding-bottom: 100px;
 	.margin-center();
 	.main-top {
 		margin-top: 30px;
@@ -188,5 +192,19 @@ p, li, th, td {
 				padding: 10px 0;
 			}
 		}
+	}
+}
+
+.footer {
+	width: 100%;
+	max-width: 900px;
+	.margin-center();
+	background: @kevin-teal;
+	height: 100px;
+	p {
+		text-align: center;
+		padding-top: 20px;
+		color: white;
+		font-weight: bold;
 	}
 }
