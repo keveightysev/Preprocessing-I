@@ -1,1 +1,282 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+  font-family: 'East Sea Dokdo', cursive;
+  color: #25896D;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+p,
+li,
+th,
+td {
+  font-size: 1.6rem;
+}
+.header {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+.header nav {
+  align-self: flex-end;
+  margin: 20px 0;
+}
+.header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  padding-left: 3rem;
+  color: black;
+}
+.header nav a:hover {
+  color: #25896D;
+}
+.header .img {
+  background-image: url('http://github.com/keveightysev.png');
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+}
+.header p {
+  border-top: 1px solid gray;
+  padding: 25px 0;
+}
+.header button {
+  width: 150px;
+  height: 40px;
+  font-size: 2rem;
+  color: white;
+  background: #25896D;
+  border: none;
+  border-radius: 5px;
+}
+.header button:focus {
+  outline-width: 0;
+}
+.main {
+  width: 95%;
+  max-width: 900px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.main .main-top {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.main .main-top .listen-up {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .main .main-top .listen-up {
+    width: 95%;
+  }
+}
+.main .main-top .good-stuff {
+  width: 48%;
+}
+.main .main-top .good-stuff li {
+  padding: 15px 0 15px 20px;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+.main .main-top .good-stuff li:first-child {
+  border-top: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .main .main-top .good-stuff {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .main .main-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.main .work-history {
+  margin-top: 20px;
+}
+.main .work-history table {
+  width: 100%;
+}
+.main .work-history table th {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  text-align: left;
+}
+.main .work-history table td {
+  padding: 10px 0;
+}
+.main .work-history table td:first-child {
+  font-weight: bold;
+}
+.footer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #25896D;
+  height: 100px;
+}
+.footer p {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-weight: bold;
+}
